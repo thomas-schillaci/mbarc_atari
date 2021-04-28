@@ -210,7 +210,7 @@ class Trainer:
             steps = 475
         elif self.config.strategy == 'progressively_balanced':
             steps = 1000
-        elif self.config.strategy == 'mbarc_tmp':
+        elif self.config.strategy == 'mbarc':
             steps = 1500
         else:
             raise NotImplementedError(f'{self.config.strategy} strategy is not implemented')
@@ -253,7 +253,7 @@ class Trainer:
                 weights = (1 - prop) * weights_ib + prop * weights_cb
                 indices.append(weights_to_indices(weights, size=steps * batch_size // ct + 1))
             indices = torch.cat(indices)
-        elif self.config.strategy == 'mbarc_tmp':
+        elif self.config.strategy == 'mbarc':
             d = torch.tensor(self.config.mbarc_dist)
             reward_count = torch.zeros((3,))  # ffw, ctr, or
             for i, data in enumerate(env.buffer):

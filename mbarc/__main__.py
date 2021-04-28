@@ -185,7 +185,7 @@ if __name__ == '__main__':
     parser.add_argument('--latent-state-size', type=int, default=128)
     parser.add_argument('--latent-use-max-probability', type=float, default=0.8)
     parser.add_argument('--load-models', default=False, action='store_true')
-    parser.add_argument('--mbarc_tmp-dist', type=float, nargs=3, default=(0.35, 0.05, 0.6))
+    parser.add_argument('--mbarc-dist', type=float, nargs=3, default=(0.35, 0.05, 0.6))
     parser.add_argument('--noop-max', type=int, default=8)
     parser.add_argument('--ppo-gamma', type=float, default=0.99)
     parser.add_argument('--ppo-lr', type=float, default=1e-4)
@@ -200,7 +200,7 @@ if __name__ == '__main__':
     parser.add_argument('--simulation-flip-first-random-for-beginning', default=True, action='store_false')
     parser.add_argument('--stacking', type=float, default=4)
     parser.add_argument('--stack-internal-states', default=False, action='store_true')
-    parser.add_argument('--strategy', type=str, default='mbarc_tmp')
+    parser.add_argument('--strategy', type=str, default='mbarc')
     parser.add_argument('--target-loss-clipping', type=float, default=0.03)
     parser.add_argument('--use-cbf-loss', default=False, action='store_true')
     parser.add_argument('--use-modified-model', default=True, action='store_false')
@@ -209,7 +209,7 @@ if __name__ == '__main__':
     parser.add_argument('--use-wandb', default=False, action='store_true')
     config = parser.parse_args()
 
-    assert config.strategy in ['online', 'class_balanced', 'square_root', 'progressively_balanced', 'mbarc_tmp']
+    assert config.strategy in ['online', 'class_balanced', 'square_root', 'progressively_balanced', 'mbarc']
 
     print_config(config)
     disable_baselines_logging()
