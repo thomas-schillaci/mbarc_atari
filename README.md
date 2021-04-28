@@ -6,9 +6,9 @@ Official repository of the *Model-Based Aware Reward Classifiers (MBARC)* thesis
 - [How to use](#how-to-use)
 - [Per-environment performance](#per-environment-performance)
 
-![World model predictions on freeway](simple/res/freeway_wm.gif)
+![World model predictions on freeway](mbarc/res/freeway_wm.gif)
 
-*SimPLe predicting 50 frames into the future from 4 initial frames on Freeway.*
+*MBARC predicting 50 frames into the future from 4 initial frames on Freeway.*
 
 ## Installation
 
@@ -16,7 +16,7 @@ This program uses **python 3.7**, **CUDA 10.2** if enabled, and was tested on Ub
 
 Run the following command to install the dependencies:
   ```shell script
-  pip install torch==1.7.1 gym==0.15.7 gym[atari] opencv-python==4.4.0.42 numpy==1.16.4 tqm
+  pip install torch==1.7.1 gym==0.15.7 gym[atari] opencv-python==4.4.0.42 numpy==1.16.4 tqdm
   
   git clone https://github.com/openai/baselines.git
   pip install -e baselines
@@ -60,7 +60,7 @@ The following boolean flags are set to `False` if not passed to the command line
 
 | Flag | Description |
 | ---- | ----------- |
-| --load-models | Loads models from `simple/models/` and bypasses training |
+| --load-models | Loads models from `mbarc/models/` and bypasses training |
 | --render-evaluation | Renders the environments during evaluation |
 | --render-training | Renders the environments during training |
 | --save-models | Save the models after each epoch |
