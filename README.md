@@ -6,7 +6,7 @@ Official repository of the *Model-Based Aware Reward Classifiers (MBARC)* thesis
 - [How to use](#how-to-use)
 - [Per-environment performance](#per-environment-performance)
 
-![World model predictions on freeway](mbarc/res/freeway_wm.gif)
+![World model predictions on freeway](res/freeway_wm.gif)
 
 *MBARC predicting 50 frames into the future from 4 initial frames on Freeway.*
 
