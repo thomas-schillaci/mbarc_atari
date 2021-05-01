@@ -60,10 +60,8 @@ The following boolean flags are set to `False` if not passed to the command line
 
 | Flag | Description |
 | ---- | ----------- |
-| --load-models | Loads models from `mbarc/models/` and bypasses training |
 | --render-evaluation | Renders the environments during evaluation |
 | --render-training | Renders the environments during training |
-| --save-models | Save the models after each epoch |
 | --use-modified-model | Setting this flag will replace MBARC's proposed reward prediction head with SimPLe's | 
 | --use-wandb | Enables [wandb](https://www.wandb.com/) to track the experiment |
 
@@ -76,7 +74,10 @@ python -m mbarc --device cpu --render-training
 
 The scores* obtained with this implementation are detailed in the following table:
 
-| Environment | Score | Paper's score | % of reported score in the original paper |
-| ----------- | ---:  | ---:          | ---:                                      |
+| Environment | Score |
+| ----------- | ---:  |
+| Freeway | 23.8 |
 
-**Scores obtained on only one full training per environment. More numbers to come.*
+**Scores obtained on only one full training per environment.
+ The scores are the maximum average cumulative reward obtained in the real environment.
+ More numbers to come.*
