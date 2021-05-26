@@ -76,8 +76,23 @@ The scores* obtained with this implementation are detailed in the following tabl
 
 | Environment | Score |
 | ----------- | ---:  |
+| Alien | 380 |
+| Amidar | 56.8 |
+| Assault | 582.3 |
+| Asterix | 718.3 |
+| BankHeist | 40.3 |
+| ChopperCommand | 1020 |
+| DemonAttack | 547.7 |
 | Freeway | 23.8 |
+| Frostbite | 218.7 |
+| Gopher | 520 |
+| Hero | 2323.5 |
+| Jamesbond | 71.7 |
+| Kangaroo | 380 |
+| Krull | 3332.4 |
+| Qbert | 356.7 |
+| Seaquest | 248 |
+| UpNDown | 2905 |
 
 **Scores obtained on only one full training per environment.
- The scores are the maximum average cumulative reward obtained in the real environment.
- More numbers to come.*
+ The scores are the maximum average cumulative reward obtained in the real environment.*
