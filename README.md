@@ -1,6 +1,6 @@
 # MBARC (Atari)
 
-Official repository of the *Model-Based Aware Reward Classifiers (MBARC)* thesis ([Atari 100k benchmark](https://paperswithcode.com/sota/atari-games-100k-on-atari-100k) version).
+Official repository of the *Model-Based Aware Reward Classification* (MBARC) thesis ([Atari 100k benchmark](https://paperswithcode.com/sota/atari-games-100k-on-atari-100k) version).
 
 - [Installation](#installation)
 - [How to use](#how-to-use)
